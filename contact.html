@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Contact So¢obeauty</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- navbar -->
+    <div class="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="asset/logos.png" width="150px">
+            </div>
+            <nav>
+                <ul id="menuNav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="shop.html"><img src="asset/cart.png" width="30px" height="30px"></a>
+            <img src="asset/menu.png" class="icon-menu" onclick="menutoggle()">
+        </div>
+    </div>
+    </div>
+
+        <!-- footer -->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Download Our App</h3>
+                        <p>Download App for Android and IOS Mobile Phone</p>
+                        <div class="app-logo">
+                            <img src="asset/play-store.png">
+                            <img src="asset/app-store.png">
+                        </div>
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="asset/logos.png">
+                        <p>Outer beauty turns the head, but inner beauty turns the heart.</p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Useful Links</h3>
+                       <ul>
+                           <li>Coupons</li>
+                           <li>Blog Post</li>
+                           <li>Return Policy</li>
+                           <li>Join Affiliate</li>
+                       </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Follow us, click here⬇️</h3>
+                       <ul>
+                           <a href="facebook.com/Socobeauty"><li>Facebook</li></a>
+                           <a href="twitter.com/socobeauty"><li>Twitter</li></a>
+                           <a href="instagram.com/socobeauty"><li>Instagram</li></a>
+                       </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="copright" style="text-align: center;">Copyright 2022 - Dvs</p>
+            </div>
+        </div>
+
+        <!-- javascript untuk navbar -->
+        <script>
+            var menuNav = document.getElementById("menuNav");
+            menuNav.style.maxHeight = "0px";
+
+            function menutoggle(){
+                if(menuNav.style.maxHeight == "0px"){
+                    menuNav.style.maxHeight = "200px"; 
+                }
+                else{
+                    menuNav.style.maxHeight = "0px";
+                }
+            }
+        </script>
+</body>
+</html>
